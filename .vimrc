@@ -50,6 +50,11 @@ call plug#end()
 "Turn on colorscheme
 colorscheme nord 
 
+"Turn on nord colorscheme for lightline
+let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ }
+
 "Enable Syntax processing
 syntax enable
 
