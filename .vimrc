@@ -9,6 +9,11 @@ call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
 
+" parinfer plugin, and automatic recompilation
+" note this requires a rust toolchain to be installed
+Plug 'eraserhd/parinfer-rust', {'do':
+        \  'cargo build --release'}
+
 " Sane defaults package
 Plug 'tpope/vim-sensible'
 
