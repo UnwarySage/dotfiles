@@ -32,6 +32,9 @@ Plug 'tpope/vim-salve'
 " Rainbow parens
 Plug 'kien/rainbow_parentheses.vim'
 
+" add graphical undo tree
+Plug 'sjl/gundo.vim'
+
 " Gui -ish tweaks
 
 " powerline style plugin
@@ -49,6 +52,10 @@ Plug 'arcticicestudio/nord-vim'
 call plug#end()
 
 " General Configuration
+
+" Keybindings
+
+nnoremap <leader>u :GundoToggle<CR>
 
 " Visual setup
 
