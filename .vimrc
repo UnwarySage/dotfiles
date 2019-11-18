@@ -58,7 +58,17 @@ colorscheme nord
 "Turn on nord colorscheme for lightline
 let g:lightline = {
       \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified', 'gitbranch' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'fugitive#head'
+      \ },
       \ }
+
+" Remove redudnant mode showing
+set noshowmode
 
 "Enable Syntax processing
 syntax enable
