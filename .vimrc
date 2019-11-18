@@ -82,3 +82,8 @@ set number
 " Turn on cursor line indication
 set cursorline
 
+" set incremental and highlight search
+set incsearch
+set hlsearch
+
+
