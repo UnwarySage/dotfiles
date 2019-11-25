@@ -335,3 +335,11 @@ exec --no-startup-id /usr/bin/unclutter -b
 
 # Refresh wallpaper on screen resolution change
 exec --no-startup-id /usr/bin/xeventbind resolution /usr/bin/wallpaper-refresh
+
+# Launch comms programs on system start
+exec --no-startup-id /snap/bin/discord
+exec --no-startup-id /snap/bin/telegram-desktop
+
+# Workspace program assignments
+assign [class="^TelegramDesktop$"] $ws3
+assign [class="^discord$"] $ws3
