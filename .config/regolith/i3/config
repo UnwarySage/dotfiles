@@ -18,9 +18,9 @@ set $terminal_path /usr/bin/alacritty
 
 # Color values are defined in ~/.Xresources-regolith
 # These are the labels which define each i3 workspace.
-set_from_resource $ws1  i3-wm.workspace.01.name "1"
-set_from_resource $ws2  i3-wm.workspace.02.name "2"
-set_from_resource $ws3  i3-wm.workspace.03.name "3"
+set_from_resource $ws1  i3-wm.workspace.01.name "main"
+set_from_resource $ws2  i3-wm.workspace.02.name "alt"
+set_from_resource $ws3  i3-wm.workspace.03.name "comm"
 set_from_resource $ws4  i3-wm.workspace.04.name "4"
 set_from_resource $ws5  i3-wm.workspace.05.name "5"
 set_from_resource $ws6  i3-wm.workspace.06.name "6"
@@ -321,6 +321,12 @@ bar {
       urgent_workspace   $i3-wm.bar.workspace.urgent.border.color       $i3-wm.bar.workspace.urgent.background.color    $i3-wm.bar.workspace.urgent.text.color
   }
 }
+
+
+# Multiple Monitor Commands
+
+bindsym $mod+Ctrl+Left move workspace to output left
+bindsym $mod+Ctrl+Right move workspace to output right
 
 # Run programs when i3 starts
 
